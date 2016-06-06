@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="android-HeaderFooterGridView-0.2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/jp.co.recruit_mp/android-HeaderFooterGridView/0.2.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/jp.co.recruit_mp/android-HeaderFooterGridView/0.2.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jp.co.recruit_mp/android-HeaderFooterGridView/0.2.1/daf3a35f5a69c0c2693b925a0ef8b40fe205a164/android-HeaderFooterGridView-0.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
