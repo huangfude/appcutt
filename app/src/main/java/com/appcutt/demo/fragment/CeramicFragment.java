@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 
 import com.appcutt.demo.R;
-import com.appcutt.demo.adapters.VitrifiedGridPagerAdappter;
+import com.appcutt.demo.adapters.CeramicGridPagerAdappter;
 
 public class CeramicFragment extends Fragment implements AbsListView.OnScrollListener {
 
@@ -36,7 +36,7 @@ public class CeramicFragment extends Fragment implements AbsListView.OnScrollLis
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_vitrified, container, false);
+        return inflater.inflate(R.layout.fragment_ceramic, container, false);
     }
 
     @Override
@@ -50,7 +50,7 @@ public class CeramicFragment extends Fragment implements AbsListView.OnScrollLis
     }
 
     private void initTabLayout() {
-        VitrifiedGridPagerAdappter adapter = new VitrifiedGridPagerAdappter(getActivity().getSupportFragmentManager(), getContext());
+        CeramicGridPagerAdappter adapter = new CeramicGridPagerAdappter(getActivity().getSupportFragmentManager(), getContext());
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
     }

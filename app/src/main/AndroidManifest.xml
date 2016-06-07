@@ -44,6 +44,24 @@
             android:theme="@style/NoActionBarTheme.Transparent" />
 
         <activity
+            android:name=".activity.FullActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/full"
+            android:theme="@style/NoActionBarTheme.Transparent" />
+
+        <activity
+            android:name=".activity.PorcelainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/porcelain"
+            android:theme="@style/NoActionBarTheme.Transparent" />
+
+        <activity
+            android:name=".activity.RusticActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/rustic"
+            android:theme="@style/NoActionBarTheme.Transparent" />
+
+        <activity
             android:name=".activity.VitrifiedActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/vetrified"

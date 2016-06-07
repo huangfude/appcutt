@@ -64,6 +64,15 @@ public class BaseActivity extends AppCompatActivity {
                     case R.id.nav_ceramic:
                         AppUtils.showToast("ceramic", BaseActivity.this);
                         return true;
+                    case R.id.nav_full:
+                        AppUtils.showToast("full", BaseActivity.this);
+                        return true;
+                    case R.id.nav_porcelain:
+                        AppUtils.showToast("porcelain", BaseActivity.this);
+                        return true;
+                    case R.id.nav_rustic:
+                        AppUtils.showToast("rustic", BaseActivity.this);
+                        return true;
                     case R.id.nav_vetrified:
                         AppUtils.showToast("vetrified", BaseActivity.this);
                         return true;

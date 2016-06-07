@@ -21,7 +21,10 @@ import android.widget.AbsListView;
 import com.appcutt.demo.R;
 import com.appcutt.demo.fragment.CeramicFragment;
 import com.appcutt.demo.fragment.ContactFragment;
+import com.appcutt.demo.fragment.FullFragment;
 import com.appcutt.demo.fragment.HomeFragment;
+import com.appcutt.demo.fragment.PorcelainFragment;
+import com.appcutt.demo.fragment.RusticFragment;
 import com.appcutt.demo.fragment.VitrifiedFragment;
 import com.appcutt.demo.fragment.SettingsFragment;
 import com.appcutt.demo.utils.AppUtils;
@@ -106,6 +109,19 @@ public class HomeActivity extends AppCompatActivity implements AbsListView.OnScr
 
                         AppUtils.showToast("ceramic", mContext);
                         return true;
+                    case R.id.nav_full:
+
+                        if (mFragment instanceof FullFragment) {
+                            return true;
+                        }
+                        mFragment = FullFragment.newInstance("main", "full");
+
+                        FragmentTransaction fu = mFragmentManager.beginTransaction();
+                        fu.replace(R.id.content_frame, mFragment, "full_tag");
+                        fu.commit();
+
+                        AppUtils.showToast("full", mContext);
+                        return true;
                     case R.id.nav_vetrified:
 
                         if (mFragment instanceof VitrifiedFragment) {
@@ -118,6 +134,32 @@ public class HomeActivity extends AppCompatActivity implements AbsListView.OnScr
                         fp.commit();
 
                         AppUtils.showToast("vetrified", mContext);
+                        return true;
+                    case R.id.nav_porcelain:
+
+                        if (mFragment instanceof PorcelainFragment) {
+                            return true;
+                        }
+                        mFragment = PorcelainFragment.newInstance("main", "porcelain");
+
+                        FragmentTransaction fq = mFragmentManager.beginTransaction();
+                        fq.replace(R.id.content_frame, mFragment, "porcelain_tag");
+                        fq.commit();
+
+                        AppUtils.showToast("porcelain", mContext);
+                        return true;
+                    case R.id.nav_rustic:
+
+                        if (mFragment instanceof RusticFragment) {
+                            return true;
+                        }
+                        mFragment = RusticFragment.newInstance("main", "rustic");
+
+                        FragmentTransaction ft = mFragmentManager.beginTransaction();
+                        ft.replace(R.id.content_frame, mFragment, "rustic_tag");
+                        ft.commit();
+
+                        AppUtils.showToast("rustic", mContext);
                         return true;
                     case R.id.nav_contact:
                         if (mFragment instanceof ContactFragment) {

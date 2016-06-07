@@ -83,6 +83,15 @@ public class CeramicActivity extends AppCompatActivity implements AbsListView.On
                         return true;
                     case R.id.nav_ceramic:
                         return true;
+                    case R.id.nav_full:
+                        AppUtils.showToast("full", CeramicActivity.this);
+                        return true;
+                    case R.id.nav_porcelain:
+                        AppUtils.showToast("porcelain", CeramicActivity.this);
+                        return true;
+                    case R.id.nav_rustic:
+                        AppUtils.showToast("rustic", CeramicActivity.this);
+                        return true;
                     case R.id.nav_vetrified:
                         AppUtils.showToast("vetrified", CeramicActivity.this);
                         return true;

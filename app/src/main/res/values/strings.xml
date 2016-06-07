@@ -12,7 +12,7 @@
     <string name="help">帮助</string>
     <string name="share">分享</string>
 
-    <string name="ceramic">CERAMIC TILE</string>
+    <string name="ceramic">CERAMIC</string>
     <string name="c75x150">75x150</string>
     <string name="c100x100">100x100</string>
     <string name="c100x200">100x200</string>
@@ -26,8 +26,22 @@
     <string name="c300x600">300x600</string>
     <string name="c400x400">400x400</string>
     <string name="c600x600">600x600</string>
+    
+    <string name="full">FULL GLAZED POLISHED</string>
+    <string name="fulltile">FULL GLAZED POLISHED TILE</string>
+    
+    <string name="porcelain">PORCELAIN POLISHED</string>
+    <string name="doubleloading">Double Loading</string>
+    <string name="pilates">Pilates</string>
+    <string name="solublesalt">Soluble Salt</string>
+    
+    <string name="rustic">RUSTIC</string>
+    <string name="r200x400">200x400</string>
+    <string name="r300x300">300x300</string>
+    <string name="r400x400">400x400</string>
+    <string name="r600x600">600x600</string>
 
-    <string name="vetrified">VETRIFIED TILE</string>
+    <string name="vetrified">VETRIFIED</string>
     <string name="v28x30cm">28x30cm</string>
     <string name="v28x60cm">28x60cm</string>
     <string name="v30x30cm">30x30cm</string>

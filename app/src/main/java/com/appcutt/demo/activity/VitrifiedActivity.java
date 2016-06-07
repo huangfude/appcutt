@@ -84,6 +84,15 @@ public class VitrifiedActivity extends AppCompatActivity implements AbsListView.
                     case R.id.nav_ceramic:
                         AppUtils.showToast("ceramic", VitrifiedActivity.this);
                         return true;
+                    case R.id.nav_full:
+                        AppUtils.showToast("full", VitrifiedActivity.this);
+                        return true;
+                    case R.id.nav_porcelain:
+                        AppUtils.showToast("porcelain", VitrifiedActivity.this);
+                        return true;
+                    case R.id.nav_rustic:
+                        AppUtils.showToast("rustic", VitrifiedActivity.this);
+                        return true;
                     case R.id.nav_vetrified:
                         return true;
                     case R.id.nav_contact:
