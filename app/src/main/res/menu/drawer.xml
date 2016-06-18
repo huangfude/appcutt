@@ -3,12 +3,6 @@
     tools:context=".NavigationViewActivity">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:checked="true"
-            android:visible="false"
-            android:icon="@drawable/ic_home_grey_600_24dp"
-            android:title="@string/home" />
-        <item
             android:id="@+id/nav_vitrified"
             android:icon="@drawable/ic_favorite_grey_600_24dp"
             android:title="@string/vitrified" />
@@ -28,10 +22,12 @@
             android:id="@+id/nav_rustic"
             android:icon="@drawable/ic_favorite_grey_600_24dp"
             android:title="@string/rustic" />
+        <!--
         <item
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_email_grey_600_24dp"
             android:title="@string/contact" />
+        -->
 
     </group>
 

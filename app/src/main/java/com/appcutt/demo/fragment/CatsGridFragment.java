@@ -144,7 +144,7 @@ public class CatsGridFragment extends Fragment {
     }
 
     private void showList(final int page) {
-        if (isLoading) return;
+//        if (isLoading) return;
 
         if (page > 1) loadingFooter.switchVisible(true);
 
