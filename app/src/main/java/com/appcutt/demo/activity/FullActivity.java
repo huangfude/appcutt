@@ -81,6 +81,9 @@ public class FullActivity extends AppCompatActivity implements AbsListView.OnScr
                         Intent intent = new Intent(FullActivity.this,HomeActivity.class);
                         startActivity(intent);
                         return true;
+                    case R.id.nav_vitrified:
+                        AppUtils.showToast("vitrified", FullActivity.this);
+                        return true;
                     case R.id.nav_ceramic:
                         AppUtils.showToast("ceramic", FullActivity.this);
                         return true;
@@ -92,15 +95,8 @@ public class FullActivity extends AppCompatActivity implements AbsListView.OnScr
                     case R.id.nav_rustic:
                         AppUtils.showToast("rustic", FullActivity.this);
                         return true;
-                    case R.id.nav_vetrified:
-                        AppUtils.showToast("vetrified", FullActivity.this);
-                        return true;
                     case R.id.nav_contact:
                         AppUtils.showToast("contact", FullActivity.this);
-                        return true;
-                    case R.id.nav_settings:
-                        AppUtils.showToast("settings", FullActivity.this);
-
                         return true;
                 }
 

@@ -14,7 +14,7 @@
         android:layout_height="48dp">
 
         <TextView
-            android:text="@string/vetrified"
+            android:text="@string/vitrified"
             android:textColor="@color/white"
             android:textSize="@dimen/text_large"
             android:textStyle="bold"

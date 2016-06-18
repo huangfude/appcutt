@@ -9,9 +9,10 @@ AppDemo
 # Thanks
 This app uses following Material design support libraries for pre-lollipop.
 * [Material Cat](https://github.com/konifar/material-cat)
+* Jinmiao - <jinmiao0601@gmail.com>
 
 # Developed By
-Jinmiao - <jinmiao0601@gmail.com>
+Huang fude - <huangfude@outlook.com>
 
 # License
 ```

@@ -81,6 +81,9 @@ public class CeramicActivity extends AppCompatActivity implements AbsListView.On
                         Intent intent = new Intent(CeramicActivity.this,HomeActivity.class);
                         startActivity(intent);
                         return true;
+                    case R.id.nav_vitrified:
+                        AppUtils.showToast("vitrified", CeramicActivity.this);
+                        return true;
                     case R.id.nav_ceramic:
                         return true;
                     case R.id.nav_full:
@@ -92,15 +95,8 @@ public class CeramicActivity extends AppCompatActivity implements AbsListView.On
                     case R.id.nav_rustic:
                         AppUtils.showToast("rustic", CeramicActivity.this);
                         return true;
-                    case R.id.nav_vetrified:
-                        AppUtils.showToast("vetrified", CeramicActivity.this);
-                        return true;
                     case R.id.nav_contact:
                         AppUtils.showToast("contact", CeramicActivity.this);
-                        return true;
-                    case R.id.nav_settings:
-                        AppUtils.showToast("settings", CeramicActivity.this);
-
                         return true;
                 }
 

@@ -81,6 +81,8 @@ public class VitrifiedActivity extends AppCompatActivity implements AbsListView.
                         Intent intent = new Intent(VitrifiedActivity.this,HomeActivity.class);
                         startActivity(intent);
                         return true;
+                    case R.id.nav_vitrified:
+                        return true;
                     case R.id.nav_ceramic:
                         AppUtils.showToast("ceramic", VitrifiedActivity.this);
                         return true;
@@ -93,14 +95,8 @@ public class VitrifiedActivity extends AppCompatActivity implements AbsListView.
                     case R.id.nav_rustic:
                         AppUtils.showToast("rustic", VitrifiedActivity.this);
                         return true;
-                    case R.id.nav_vetrified:
-                        return true;
                     case R.id.nav_contact:
                         AppUtils.showToast("contact", VitrifiedActivity.this);
-                        return true;
-                    case R.id.nav_settings:
-                        AppUtils.showToast("settings", VitrifiedActivity.this);
-
                         return true;
                 }
 

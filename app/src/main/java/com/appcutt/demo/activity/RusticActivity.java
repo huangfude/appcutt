@@ -81,6 +81,9 @@ public class RusticActivity extends AppCompatActivity implements AbsListView.OnS
                         Intent intent = new Intent(RusticActivity.this,HomeActivity.class);
                         startActivity(intent);
                         return true;
+                    case R.id.nav_vitrified:
+                        AppUtils.showToast("vitrified", RusticActivity.this);
+                        return true;
                     case R.id.nav_ceramic:
                         AppUtils.showToast("ceramic", RusticActivity.this);
                         return true;
@@ -92,15 +95,8 @@ public class RusticActivity extends AppCompatActivity implements AbsListView.OnS
                         return true;
                     case R.id.nav_rustic:
                         return true;
-                    case R.id.nav_vetrified:
-                        AppUtils.showToast("vetrified", RusticActivity.this);
-                        return true;
                     case R.id.nav_contact:
                         AppUtils.showToast("contact", RusticActivity.this);
-                        return true;
-                    case R.id.nav_settings:
-                        AppUtils.showToast("settings", RusticActivity.this);
-
                         return true;
                 }
 

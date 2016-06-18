@@ -56,20 +56,13 @@ public class HomeActivity extends AppCompatActivity implements AbsListView.OnScr
         mContext = this;
 
         mFragmentManager = getSupportFragmentManager();
-        FragmentTransaction f1 = mFragmentManager.beginTransaction();
-
-//        mFragment = HomeFragment.newInstance("main", "home");
-//
-//        f1.add(R.id.content_frame, mFragment, "home_tag");
-//        f1.commit();
-
-        mFragment = CeramicFragment.newInstance("main", "ceramic");
+        mFragment = VitrifiedFragment.newInstance("main", "vitrified");
 
         FragmentTransaction fp = mFragmentManager.beginTransaction();
-        fp.replace(R.id.content_frame, mFragment, "ceramic_tag");
+        fp.replace(R.id.content_frame, mFragment, "vitrified_tag");
         fp.commit();
 
-        navigationView.setCheckedItem(R.id.nav_ceramic);
+        navigationView.setCheckedItem(R.id.nav_vitrified);
 
         initNavigationView();
     }
@@ -96,6 +89,19 @@ public class HomeActivity extends AppCompatActivity implements AbsListView.OnScr
                         fh.commit();
 
                         return true;
+                    case R.id.nav_vitrified:
+
+                        if (mFragment instanceof VitrifiedFragment) {
+                            return true;
+                        }
+                        mFragment = VitrifiedFragment.newInstance("main", "vitrified");
+
+                        FragmentTransaction fp = mFragmentManager.beginTransaction();
+                        fp.replace(R.id.content_frame, mFragment, "vitrified_tag");
+                        fp.commit();
+
+                        AppUtils.showToast("vitrified", mContext);
+                        return true;
                     case R.id.nav_ceramic:
 
                         if (mFragment instanceof CeramicFragment) {
@@ -121,19 +127,6 @@ public class HomeActivity extends AppCompatActivity implements AbsListView.OnScr
                         fu.commit();
 
                         AppUtils.showToast("full", mContext);
-                        return true;
-                    case R.id.nav_vetrified:
-
-                        if (mFragment instanceof VitrifiedFragment) {
-                            return true;
-                        }
-                        mFragment = VitrifiedFragment.newInstance("main", "vetrified");
-
-                        FragmentTransaction fp = mFragmentManager.beginTransaction();
-                        fp.replace(R.id.content_frame, mFragment, "vetrified_tag");
-                        fp.commit();
-
-                        AppUtils.showToast("vetrified", mContext);
                         return true;
                     case R.id.nav_porcelain:
 
@@ -171,22 +164,6 @@ public class HomeActivity extends AppCompatActivity implements AbsListView.OnScr
                         FragmentTransaction fc = mFragmentManager.beginTransaction();
                         fc.replace(R.id.content_frame, mFragment, "contact_tag");
                         fc.commit();
-
-                        return true;
-                    case R.id.nav_share:
-
-                        AppUtils.showToast("share", mContext);
-                        return true;
-                    case R.id.nav_settings:
-                        if (mFragment instanceof SettingsFragment) {
-                            return true;
-                        }
-
-                        mFragment = SettingsFragment.newInstance("main", "settings");
-
-                        FragmentTransaction fs = mFragmentManager.beginTransaction();
-                        fs.replace(R.id.content_frame, mFragment, "settings_tag");
-                        fs.commit();
 
                         return true;
                 }

@@ -32,6 +32,12 @@
         </activity>
 
         <activity
+            android:name=".activity.VitrifiedActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/vitrified"
+            android:theme="@style/NoActionBarTheme.Transparent" />
+
+        <activity
             android:name=".activity.PhotoDetailActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
@@ -59,12 +65,6 @@
             android:name=".activity.RusticActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/rustic"
-            android:theme="@style/NoActionBarTheme.Transparent" />
-
-        <activity
-            android:name=".activity.VitrifiedActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/vetrified"
             android:theme="@style/NoActionBarTheme.Transparent" />
 
         <activity
