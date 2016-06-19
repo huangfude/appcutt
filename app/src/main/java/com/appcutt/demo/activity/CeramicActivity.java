@@ -50,9 +50,6 @@ public class CeramicActivity extends AppCompatActivity implements AbsListView.On
         fp.commit();
 
         navigationView.setCheckedItem(R.id.nav_ceramic);
-
-        // 初始化图片缓存
-        ImageLoaderUtil.initImageLoader(this);
         initNavigationView();
     }
 

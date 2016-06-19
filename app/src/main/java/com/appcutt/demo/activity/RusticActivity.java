@@ -50,9 +50,6 @@ public class RusticActivity extends AppCompatActivity implements AbsListView.OnS
         fp.commit();
 
         navigationView.setCheckedItem(R.id.nav_rustic);
-
-        // 初始化图片缓存
-        ImageLoaderUtil.initImageLoader(this);
         initNavigationView();
     }
 

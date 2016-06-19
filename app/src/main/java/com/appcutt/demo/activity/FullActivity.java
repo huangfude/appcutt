@@ -50,9 +50,6 @@ public class FullActivity extends AppCompatActivity implements AbsListView.OnScr
         fp.commit();
 
         navigationView.setCheckedItem(R.id.nav_full);
-
-        // 初始化图片缓存
-        ImageLoaderUtil.initImageLoader(this);
         initNavigationView();
     }
 

@@ -50,9 +50,6 @@ public class PorcelainActivity extends AppCompatActivity implements AbsListView.
         fp.commit();
 
         navigationView.setCheckedItem(R.id.nav_porcelain);
-
-        // 初始化图片缓存
-        ImageLoaderUtil.initImageLoader(this);
         initNavigationView();
     }
 

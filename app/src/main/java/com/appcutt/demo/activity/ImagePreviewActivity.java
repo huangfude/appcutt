@@ -83,7 +83,7 @@ public class ImagePreviewActivity extends AppCompatActivity implements ViewPager
         mImageAdapter = new ImageAdapter(this, mImageList);
         mGallery.setAdapter(mImageAdapter);
         mGallery.setCurrentItem(mCurrentIndex);
-        mGallery.setOnPageChangeListener(this);
+//        mGallery.setOnPageChangeListener(this);
 
         mTitle = (TextView) findViewById(R.id.title);
 
@@ -181,7 +181,7 @@ public class ImagePreviewActivity extends AppCompatActivity implements ViewPager
             try {
                 if (!TextUtils.isEmpty(path)) {
 
-                    Log.d("instantiateItem", "preview adapter pictureInfo:" + path);
+//                    Log.d("instantiateItem", "preview adapter pictureInfo:" + path);
 
                     if (path.startsWith("http")) {
                         // 加载网络图片
