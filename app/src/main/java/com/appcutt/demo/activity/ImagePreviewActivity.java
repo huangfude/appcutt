@@ -83,7 +83,7 @@ public class ImagePreviewActivity extends AppCompatActivity implements ViewPager
         mImageAdapter = new ImageAdapter(this, mImageList);
         mGallery.setAdapter(mImageAdapter);
         mGallery.setCurrentItem(mCurrentIndex);
-//        mGallery.setOnPageChangeListener(this);
+        mGallery.addOnPageChangeListener(this);
 
         mTitle = (TextView) findViewById(R.id.title);
 
